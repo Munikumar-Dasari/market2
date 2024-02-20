@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+{% extends "market_base.html" %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block header %}
+<div class="market-content-main-bg-container">
+    <div class="market-content-top-text-div">
+        <h1 class="market-content-top-text">Institute Name</h1>
+    </div>
+    <div class="market-content-scroll-container">
+        <div class="market-kis-each-team-div">
+            <div class="market-kis-team-img-text-container">
+                <div class="market-kis-team-img-div">
+                    <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="image" class="market-kis-team-img"/>
+                </div>
+                <div class="market-kis-team-text-container">
+                    <h1>Muni Team</h1>
+                    <h3>Munikumar</h3>
+                    <div style="display:flex;flex-wrap:wrap;">
+                    <p>dasarimunikumar@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="market-kis-team-btn-container">
+                <div>
+                    <button class="market-kis-team-btn">Insights</button>
+                </div>
+                <div data-bs-toggle="modal" data-bs-target="#showReel">
+                    <button class="market-kis-team-btn">Show Reel</button>
+                </div>
+                <div data-bs-toggle="modal" data-bs-target="#teamDetailsModal">
+                    <button class="market-kis-team-btn">Team Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--team details modal-->
+    <div class="modal fade" id="teamDetailsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="market-kis-team-modal-container">
+                <div class="market-kis-team-modal-img-div">
+                    <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" class="market-kis-team-modal-img" />
+                </div>
+                <h1 class="market-kis-team-modal-team-name">Muni Team</h1>
+                <p class="market-kis-team-modal-team-mail">dasarimunikumar3@gmail.com</p>
+                <div class="market-kis-team-modal-carousel">
+                    <div id="carouselExample" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" style="height:auto;">
+                              <div class="market-kis-team-each-member-container">
+                                  <div class="card" style="width: 100%;height:auto;">
+                                      <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Member Name 1</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Edit</a>
+                                      </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item" style="height:auto;">
+                              <div class="market-kis-team-each-member-container">
+                                  <div class="card" style="width: 100%;height:auto;">
+                                      <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Member Name 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Edit</a>
+                                      </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item" style="height:auto;">
+                              <div class="market-kis-team-each-member-container">
+                                  <div class="card" style="width: 100%;height:auto;">
+                                      <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Member Name 3</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Edit</a>
+                                      </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item" style="height:auto;">
+                              <div class="market-kis-team-each-member-container">
+                                  <div class="card" style="width: 100%;height:auto;">
+                                      <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Member Name 4</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Edit</a>
+                                      </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item" style="height:auto;">
+                              <div class="market-kis-team-each-member-container">
+                                  <div class="card" style="width: 100%;height:auto;">
+                                      <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Member Name 5</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Edit</a>
+                                      </div>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="showReel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Project Name</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="market-kis-team-modal-container">
+                  <video id="my-video" class="video-js" controls preload="auto" poster="{{ x.Image.url }}" data-setup="{}" style="height:100%;width:100%;" video>
+                       <source src="https://www.youtube.com/embed/tgbNymZ7vqY" type="video/mp4"/>
+                   </video>
+                  <div>
+                      <p class="market-kis-team-project-description">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                          Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                          unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+{% endblock %}
+</body>
+</html>

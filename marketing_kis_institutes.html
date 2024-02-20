@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+{% extends "market_base.html" %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block header %}
+<div class="market-content-main-bg-container">
+    <div class="market-content-top-text-div">
+        <h1 class="market-content-top-text"></h1>
+        <form class="d-flex">
+            <select id="city" class="market-city-select">
+                <option>City</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+            </select>
+        </form>
+    </div>
+    <div class="d-none d-md-block">
+        <div class="market-kis-each-institute-div" style="border-bottom: 1px solid #dddada;padding-bottom: 7px;">
+            <div class="market-kis-institute-name-div">
+                <h4 class="market-kis-institute-heading-names">Institutes</h4>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <h4 class="market-kis-institute-heading-names">City</h4>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <h4 class="market-kis-institute-heading-names">Contact Person</h4>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <h4 class="market-kis-institute-heading-names">Phone Number</h4>
+            </div>
+        </div>
+    </div>
+    <div class="market-kis-content-scroll-container">
+        <div class="market-kis-each-institute-div">
+            <div class="market-kis-institute-name-div">
+                <h1><a href="{% url 'marketing:marketing_institutes_teams' %}" style="text-decoration:none;color:#000">Muni arts & science college</a></h1>
+                <p>muni@gmail.com</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Tirupati</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Munikumar</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>8978584341</p>
+            </div>
+        </div>
+        <div class="market-kis-each-institute-div">
+            <div class="market-kis-institute-name-div">
+                <h1><a href="{% url 'marketing:marketing_institutes_teams' %}" style="text-decoration:none;color:#000">Muni arts & science college</a></h1>
+                <p>muni@gmail.com</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Tirupati</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Munikumar</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>8978584341</p>
+            </div>
+        </div>
+        <div class="market-kis-each-institute-div">
+            <div class="market-kis-institute-name-div">
+                <h1><a href="{% url 'marketing:marketing_institutes_teams' %}" style="text-decoration:none;color:#000">Muni arts & science college</a></h1>
+                <p>muni@gmail.com</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Tirupati</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Munikumar</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>8978584341</p>
+            </div>
+        </div>
+        <div class="market-kis-each-institute-div">
+            <div class="market-kis-institute-name-div">
+                <h1><a href="{% url 'marketing:marketing_institutes_teams' %}" style="text-decoration:none;color:#000">Muni arts & science college</a></h1>
+                <p>muni@gmail.com</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Tirupati</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Munikumar</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>8978584341</p>
+            </div>
+        </div>
+        <div class="market-kis-each-institute-div">
+            <div class="market-kis-institute-name-div">
+                <h1><a href="{% url 'marketing:marketing_institutes_teams' %}" style="text-decoration:none;color:#000">Muni arts & science college</a></h1>
+                <p>muni@gmail.com</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Tirupati</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Munikumar</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>8978584341</p>
+            </div>
+        </div>
+        <div class="market-kis-each-institute-div">
+            <div class="market-kis-institute-name-div">
+                <h1><a href="{% url 'marketing:marketing_institutes_teams' %}" style="text-decoration:none;color:#000">Muni arts & science college</a></h1>
+                <p>muni@gmail.com</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Tirupati</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Munikumar</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>8978584341</p>
+            </div>
+        </div>
+        <div class="market-kis-each-institute-div">
+            <div class="market-kis-institute-name-div">
+                <h1><a href="{% url 'marketing:marketing_institutes_teams' %}" style="text-decoration:none;color:#000">Muni arts & science college</a></h1>
+                <p>muni@gmail.com</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Tirupati</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Munikumar</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>8978584341</p>
+            </div>
+        </div>
+        <div class="market-kis-each-institute-div">
+            <div class="market-kis-institute-name-div">
+                <h1><a href="{% url 'marketing:marketing_institutes_teams' %}" style="text-decoration:none;color:#000">Muni arts & science college</a></h1>
+                <p>muni@gmail.com</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Tirupati</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>Munikumar</p>
+            </div>
+            <div class="market-kis-institute-each-sub-div">
+                <p>8978584341</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
